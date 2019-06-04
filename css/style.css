@@ -29,8 +29,34 @@ body {
 	line-height: 50px;
 	font-size: 16px;
 	font-weight: 100;
-
 }
+
+
+
+#menu li a{
+  text-decoration: none;
+  position: relative;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  display: block;
+  overflow: hidden;
+  transition: 0.7s all;
+  text-transform: uppercase;
+}
+#menu li a:before{
+  content: '';
+  width: 20px;
+  position: absolute;
+  border-bottom: 2px solid white;
+  bottom: 0;
+  right: 350px;
+  transition: 0.7s all;
+}
+#menu li a:hover:before{
+  right: 0;
+}
+
+
 
 .capa {
 	color: white;
@@ -136,8 +162,12 @@ body {
 .miniatura {
 	width: 320px;
 	height: 320px;
-	background-image: url("../img/ccb.jpg");
 	display: inline-block;
 	margin-right: 15px;
 	margin-bottom: 15px;
+	background-size: contain;
+}
+.thanos{
+	font-weight: 600;
+	text-transform: uppercase
 }
